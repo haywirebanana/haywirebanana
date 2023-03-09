@@ -19,13 +19,14 @@ button {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: inherit;
+  font-size: 20px;
   font-family: inherit;
   cursor: pointer;
-  color: #08c;
+  color: rgb(152, 101, 219);
 }
 button:hover {
-  color: #04c;
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
 }
 
 .App {
@@ -34,6 +35,7 @@ button:hover {
 
 .lotion-header {
   position: fixed;
+  font-size: 30px;
   top: 0;
   left: 0;
   right: 0;
@@ -41,6 +43,9 @@ button:hover {
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lotion-header h1 {
@@ -49,7 +54,6 @@ button:hover {
   font-weight: 700;
   color: #333;
 }
-
 
 .app-sidebar {
   width: 30%;
@@ -61,7 +65,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .app-sidebar-header h1 {
   margin: 0;
@@ -80,7 +84,7 @@ button:hover {
   justify-content: space-between;
 }
 .app-sidebar-note button {
-  color: crimson;
+  color: rgb(253, 0, 51);
 }
 .app-sidebar-note p {
   margin: 10px 0;
@@ -95,7 +99,7 @@ button:hover {
 }
 .app-sidebar-note.active,
 .app-sidebar-note.active small {
-  background: #08c;
+  background: rgb(152, 101, 219);
   color: white;
 }
 
@@ -106,6 +110,7 @@ button:hover {
 .app-main-note-edit,
 .app-main-note-preview {
   height: 55vh;
+  margin-top: 30px;
 }
 
 .no-active-note {
@@ -119,37 +124,6 @@ button:hover {
 
 .app-main-note-edit {
   padding: 25px;
-}
-
-.toolbar {
-    display: block;
-    border: 1px solid #ddd;
-    width: 100%;
-    padding: 10px;
-    font-size: inherit;
-    font-family: inherit;
-}
-
-.toolbar button {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  display: inline-block;
-  text-align: center;
-  margin-right: 10px;
-  color: #444;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-
-.toolbar button::before {
-  content: attr(data-icon);
 }
 
 .app-main-note-edit input,

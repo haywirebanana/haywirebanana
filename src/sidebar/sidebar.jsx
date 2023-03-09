@@ -23,8 +23,6 @@ const Sidebar = ({
                 <strong>{title}</strong>
                 <button onClick={(e) => onDeleteNote(id)}>Delete</button>
               </div>
-  
-              <p>{body && body.substr(0, 100) + "..."}</p>
               <small className="note-meta">
                 Last Modified{" "}
                 {new Date(lastModified).toLocaleDateString("en-GB", {
